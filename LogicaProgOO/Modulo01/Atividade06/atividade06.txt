@@ -1,0 +1,112 @@
+// Algoritmo da atividade 06 do módulo 01
+inicio{
+    //Declarando as variáveis.
+    var: notaMaxA, notaMaxB, notaMaxC, notaMaxD, notaMaxGeral, notaTemp real;
+    var: qtdAprovadosA, qtdAprovadosB, qtdAprovadosC, qtdAprovadosD int;
+    var: alunoMaxA, alunoMaxB, alunoMaxC, alunoMaxD, alunoMaxGeral, alunoTemp texto;
+    //Inicializando as variáveis que precisam ser comparatdas e contabilizadas.
+    notaMaxA = 0.0;
+    notaMaxB = 0.0;
+    notaMaxC = 0.0;
+    notaMaxD = 0.0;
+    notaMaxGeral = 0.0;
+    qtdAprovadosA = 0;
+    qtdAprovadosB = 0;
+    qtdAprovadosC = 0;
+    qtdAprovadosD = 0;
+    escreva("Programa para receber 25 notas de 4 turmas, por favor, não repita as notas por aluno por turma. ");
+    //Laço de repetição para pegar as 25 notas dos alunos da turma A
+    para int i de 1 até 25 faça{
+        escreva("Digite o nome do aluno " + i + ", da turma A: ");
+        leia(alunoTemp);
+        escreva("Digite a nota do aluno " + i + ", da turma A: ");
+        leia(notaTemp);
+        //Estrutura codicional para verificar a maior nota da turma A.
+        se(notaTemp > notaMaxA){
+            notaMaxA = notaTemp;
+            alunoMaxA = alunoTemp;
+        }
+        //Estrutura codicional para contabilizar os aprovados da turma A.
+        se(notaTemp>=7.0){
+            qtdAprovadosA++; //qtdAprovadosA = qtdAprovadosA + 1
+        }
+        //Estrutura codicional para verificar a maior nota Geral das turmas.
+        se(notaTemp > notaMaxGeral){
+            notaMaxGeral = notaTemp;
+            alunoMaxGeral = alunoTemp;
+        }
+    }
+    para int i de 1 até 25 faça{
+        escreva("Digite o nome do aluno " + i + ", da turma B: ");
+        leia(alunoTemp);
+        escreva("Digite a nota do aluno " + i + ", da turma B: ");
+        leia(notaTemp);
+        //Estrutura codicional para verificar a maior nota da turma B.
+        se(notaTemp > notaMaxB){
+            notaMaxB = notaTemp;
+            alunoMaxB = alunoTemp;
+        }
+        //Estrutura codicional para contabilizar os aprovados da turma B.
+        se(notaTemp>=7.0){
+            qtdAprovadosB++;
+        }
+        //Estrutura codicional para verificar a maior nota Geral das turmas.
+        se(notaTemp > notaMaxGeral){
+            notaMaxGeral = notaTemp;
+            alunoMaxGeral = alunoTemp;
+        }
+    }
+    para int i de 1 até 25 faça{
+        escreva("Digite o nome do aluno " + i + ", da turma C: ");
+        leia(alunoTemp);
+        escreva("Digite a nota do aluno " + i + ", da turma C: ");
+        leia(notaTemp);
+        //Estrutura codicional para verificar a maior nota da turma C.
+        se(notaTemp > notaMaxC){
+            notaMaxC = notaTemp;
+            alunoMaxC = alunoTemp;
+        }
+        //Estrutura codicional para contabilizar os aprovados da turma C.
+        se(notaTemp>=7.0){
+            qtdAprovadosC++;
+        }
+        //Estrutura codicional para verificar a maior nota Geral das turmas.
+        se(notaTemp > notaMaxGeral){
+            notaMaxGeral = notaTemp;
+            alunoMaxGeral = alunoTemp;
+        }
+    }
+    para int i de 1 até 25 faça{
+        escreva("Digite o nome do aluno " + i + ", da turma D: ");
+        leia(alunoTemp);
+        escreva("Digite a nota do aluno " + i + ", da turma D: ");
+        leia(notaTemp);
+        //Estrutura codicional para verificar a maior nota da turma D.
+        se(notaTemp > notaMaxD){
+            notaMaxD = notaTemp;
+            alunoMaxD = alunoTemp;
+        }
+        //Estrutura codicional para contabilizar os aprovados da turma D.
+        se(notaTemp>=7.0){
+            qtdAprovadosD++;
+        }
+        //Estrutura codicional para verificar a maior nota Geral das turmas.
+        se(notaTemp > notaMaxGeral){
+            notaMaxGeral = notaTemp;
+            alunoMaxGeral = alunoTemp;
+        }
+    }
+
+    escreval("Quantidade de Aprovados turma A: " + qtdAprovadosA);
+    escreval("Quantidade de Aprovados turma B: " + qtdAprovadosB);
+    escreval("Quantidade de Aprovados turma C: " + qtdAprovadosC);
+    escreval("Quantidade de Aprovados turma D: " + qtdAprovadosD);
+
+    escreval("A maior nota da turma A foi " + notaMaxA + ", do aluno " + alunoMaxA);
+    escreval("A maior nota da turma B foi " + notaMaxB + ", do aluno " + alunoMaxB);
+    escreval("A maior nota da turma C foi " + notaMaxC + ", do aluno " + alunoMaxC);
+    escreval("A maior nota da turma D foi " + notaMaxD + ", do aluno " + alunoMaxD);
+
+    escreval("A maior nota entre todas as turmas foi " + notaMaxGeral + ", do aluno " + alunoMaxGeral);
+}
+            
