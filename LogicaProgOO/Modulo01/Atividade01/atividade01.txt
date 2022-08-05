@@ -1,0 +1,96 @@
+Softex - Recife
+Desenvolvimento 01
+Aluno: Aglailson Cleber Barreto da Silva
+
+Aristóteles, Sócrates e Platão estavam disputando uma competição de perguntas nas disciplinas de Física, Matemática e Química. Cada um obteve um primeiro lugar, um segundo lugar e um terceiro lugar.
+
+Sabendo que: 
+- Aristóteles não ficou em primeiro em Química; 
+- Sócrates perdeu para Platão em Física; 
+- Platão acertou mais que Aristóteles em Matemática.
+
+Informe quem ficou em 1º, 2º e 3º lugar em cada disciplina.
+
+
+Resposta:
+
+Montando um passo à passo com cada premissa:
+
+1. Para "- Aristóteles não ficou em primeiro em Química;" temos duas possibilidades. Ele ficou em segundo, ou em terceiro na matéria de química:
+
+	Química
+
+1º  
+
+2º	Aristóteles
+
+3º	Aristóteles
+
+
+2. Para "- Sócrates perdeu para Platão em Física;" Temos que Platão pode ter ficado em primeiro ou em segundo, sócrates em segundo ou terceiro na matéria de física:
+
+	Física
+
+1º	Platão
+
+2º	Platão/Sócrates
+
+3º	Sócrates
+
+
+3. Para "- Platão acertou mais que Aristóteles em Matemática." Temos que Platão pode ter ficado em primeiro ou em segundo, Aristóteles em segundo ou terceiro na matéria de matemática:
+
+ 	Matemática
+
+1º	Platão
+
+2º	Platão/Aristóteles
+
+3º	Aristóteles
+
+
+4. Vamos unir todas as matérias em uma única tabela e preencher as possibilidades que faltam:
+
+		Química				Física				Matemática
+
+1º	Platão/Sócrates			Platão/Aristóteles*¹		Platão/Sócrates
+
+2º	Aristóteles/Platão/Sócrates	Platão/Sócrates/Aristóteles	Platão/Aristóteles/Sócrates
+
+3º	Aristóteles/Platão/Sócrates*²	Sócrates/Aristóteles		Aristóteles/Sócrates
+
+*¹ Única alternativa onde Aristóteles estaria em primeiro.
+*² Única alternativa onde Platão estaria em terceiro.
+
+
+5. Levando em conta a premissa "Cada um obteve um primeiro lugar, um segundo lugar e um terceiro lugar." observemos as possibilidades únicas para cada pensador ou a posição em que ele só alcançaria em uma matéria.
+
+		Química				Física				Matemática
+
+1º	Platão/Sócrates			Aristóteles				Platão/Sócrates
+
+2º	Aristóteles/Platão/Sócrates	Platão/Sócrates/Aristóteles	Platão/Aristóteles/Sócrates
+
+3º	Platão				Sócrates/Aristóteles		Aristóteles/Sócrates
+
+
+6. Agora excluiremos as alternativas que conflitam com as possibilidades únicas:
+
+		Química				Física						Matemática
+
+1º	Sócrates				Aristóteles					Platão/Sócrates
+
+2º	Aristóteles/Sócrates	Platão/Sócrates/Aristóteles	Platão/Aristóteles/Sócrates
+
+3º	Platão					Sócrates/Aristóteles		Aristóteles/Sócrates
+
+
+7. Repetimos os mesmos processos de encontrar possibilidades únicas com a nova tabela já mais simplificada e depois excluímos as alternativas conflitantes.
+
+		Química				Física				Matemática
+
+1º	Sócrates				Aristóteles			Platão
+
+2º	Aristóteles				Platão				Sócrates
+
+3º	Platão					Sócrates			Aristóteles
