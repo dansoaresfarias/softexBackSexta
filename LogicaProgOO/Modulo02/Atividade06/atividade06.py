@@ -9,4 +9,3 @@ while (True):
         print("Erro: Você digitou um valor diferente de um inteiro de 4 digítos!")
     except Exception as erro:
         print(erro)
-    
