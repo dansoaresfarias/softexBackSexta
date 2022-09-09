@@ -42,4 +42,8 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String toString(){
+        return "Cliente " + this.nome + " | CPF: " + this.cpf;
+    }
 }

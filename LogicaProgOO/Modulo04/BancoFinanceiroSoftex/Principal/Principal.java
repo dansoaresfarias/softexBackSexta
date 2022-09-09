@@ -17,9 +17,11 @@ public class Principal {
         contaAbel.sacar(700);
         contaPaula.sacar(3000);
         contaAbel.transferir(contaPaula, 300);
-        System.out.println(contaPaula.sacar(20000));
+        // System.out.println(contaPaula.sacar(20000));
         //abel.setNome("Abel Felix");
         //abel.setEmail("abelf@gmail.com");
-        System.out.println(abel.getNome());
+        // System.out.println(abel);
+        System.out.println(contaAbel.extrato());
+        System.out.println("\n\n" + contaPaula.extrato());
     }
 }
