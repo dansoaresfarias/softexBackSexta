@@ -3,7 +3,7 @@ package LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades;
 import java.util.Date;
 
 enum TipoTransacao {
-    Saque, Depósito, Transferência;
+    Saque, Depósito, Transferência, Taxação, Rendimento;
 }
 
 public class Transacao {

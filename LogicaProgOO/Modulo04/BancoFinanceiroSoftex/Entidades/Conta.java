@@ -3,13 +3,13 @@ package LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Conta {
+public abstract class Conta {
     private int numero;
     private Agencia agencia;
     private Cliente cliente;
     private float saldo;
     private float limite;
-    private ArrayList transacoes;
+    protected ArrayList transacoes;
 
     public Conta() {
         this.transacoes = new ArrayList<Transacao>();
