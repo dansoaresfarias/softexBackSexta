@@ -4,7 +4,6 @@ import java.util.Date;
 
 import LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades.Agencia;
 import LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades.Cliente;
-import LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades.Conta;
 import LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades.ContaCorrente;
 import LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades.ContaPoupanca;
 

@@ -1,4 +1,4 @@
-package LogicaProgOO.Modulo04.BancoFinanceiroSoftex.Entidades;
+package LogicaProgOO.Modulo04.Atividade03;
 
 import java.util.ArrayList;
 import java.util.Date;
