@@ -20,12 +20,10 @@ function terceiraNota() {
         var nota01 = parseFloat(document.getElementById("nota01").value);
         if (nota01 < 0 || nota01 > 10 || isNaN(nota01)) throw "Erro: Nota1 inválida.";
         var nota02 = parseFloat(document.getElementById("nota02").value);
-        if (nota02 < 0 || nota02 > 10 || isNaN(nota02)) throw "Erro: Nota1 inválida.";
+        if (nota02 < 0 || nota02 > 10 || isNaN(nota02)) throw "Erro: Nota2 inválida.";
         var nota03 = 21 - (nota01 + nota02);
         document.getElementById("nota03").innerHTML = "<b>" + "3ª Nota: " + "</b>" + nota03;
     } catch (error) {
         alert(error);
-    }finally{
-        alert("Erro inesperado!");
     }
 }
