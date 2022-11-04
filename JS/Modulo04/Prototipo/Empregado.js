@@ -1,4 +1,4 @@
-function Aluno(nome, cpf, dataNasc, sexo, email) {
+function Empregado(nome, cpf, dataNasc, sexo, email) {
     this.nome = nome;
     this.cpf = cpf;
     this.dataNasc = dataNasc;
@@ -10,7 +10,7 @@ function Aluno(nome, cpf, dataNasc, sexo, email) {
     }
 }
 
-var aglailson = new Aluno("Aglailson Barreto", "123.456.789-00", '08-09-1986', 'M', "aglailsonb@gmail.com");
+var aglailson = new Empregado("Aglailson Barreto", "123.456.789-00", '08-09-1986', 'M', "aglailsonb@gmail.com");
 
 console.log(aglailson.valueOf());
 
