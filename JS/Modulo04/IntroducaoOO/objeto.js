@@ -47,3 +47,5 @@ pessoa.identificacao();
 var cleber = Object.create(pessoa);
 
 cleber.bio();
+
+//var niedja = new pessoa.constructor();
