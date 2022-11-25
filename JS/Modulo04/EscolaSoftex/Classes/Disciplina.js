@@ -1,5 +1,6 @@
 export class Disciplina {
-    constructor(nome, ch, curso, professor){
+    constructor(codigo, nome, ch, curso, professor){
+        this.codigo = codigo;
         this.nome = nome;
         this.ch = ch;
         this.curso = curso;
@@ -17,7 +18,7 @@ export class Disciplina {
     }
 
     lancarNota(nota){
-        if(nota.disciplina.nome == this.nome){
+        if(nota.disciplina == this.codigo){
             this.notas.push(nota);
         }else{
             console.log(`Nota do ${nota.aluno.nome} não é dessa disciplina.`);
@@ -28,7 +29,7 @@ export class Disciplina {
         var media = 0.0;
         var i = 0;
         this.notas.forEach(nota => {
-            if(nota.aluno.matricula == aluno.matricula){
+            if(nota.aluno == aluno.matricula){
                 media += nota.valor;
                 i++;
             }
